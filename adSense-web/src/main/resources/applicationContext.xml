@@ -111,7 +111,7 @@
 		</tx:attributes>
 	</tx:advice>
 	<aop:config proxy-target-class="true">
-		<aop:pointcut id="interceptorPointCuts" expression="execution(public * net.jeeshop.services.*.impl.*.*(..))" />
+		<aop:pointcut id="interceptorPointCuts" expression="execution(public * com.yuwei.adsense.services.*.impl.*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="interceptorPointCuts" />
 	</aop:config>
 </beans>
